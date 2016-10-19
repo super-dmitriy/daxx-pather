@@ -1,0 +1,9 @@
+#!/usr/bin/php
+<?php
+
+require_once "src/Block.php";
+
+$block = new Block();
+$block->loadFromFile($argv[1]);
+$block->solvePath();
+$block->saveToFile($argv[2]);
